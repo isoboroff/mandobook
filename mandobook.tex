@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+
+\usepackage[top=1in, bottom=1in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\textwidth}{7.2in}
+
+\usepackage{gchords}
+
+\newcommand\mychords{
+\def\chordsize{3.0mm}    % distance between two frets (and two strings)
+\font\fingerfont=cmr5    % font used for numbering fingers
+\font\namefont=cmr10     % font used for labeling of the chord
+\font\fretposfont=cmr7   % font used for the fret position marker
+\def\dampsymbol{$\scriptstyle\times$}    % symbol of the `damp this % string' marker
+\def\opensymbol{$\scriptstyle\circ$}     % symbol of the `open string' marker
+}
+
+\renewcommand\strings{4}
+
+\begin{document}
+% \mediumchords
+\mychords
+
+\pagestyle{empty}
+
+\begin{center}
+
+Key of C major
+
+C major 
+\chord{t}{x,p2,p3,x}{2 finger} 
+\chord{t}{p5,p2,p3,x}{chop} 
+\chord{t}{p5,p5,p7,p8}{up high}
+
+D minor \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+E minor \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+F major \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+G major \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+A minor \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+B dim \chord{t}{p4,p3,p1,p2}{} \chord{t}{x,x,p1,p2}{} \chord{t}{p1,p2,p5,p6}{}
+
+\end{center}
+\end{document}
